@@ -1,0 +1,3 @@
+program diffcalc
+implicit none
+

@@ -1,0 +1,37 @@
+M_vs_rho_cr
+set tics font "Times Roman,14"
+set format y "%1.1f"
+
+set arrow 1 from 1e+16,1.177705 to 1e+17,1.177705 nohead lc 1
+set arrow 2 from 1e+16,1.920367 to 1e+17,1.920367 nohead lc 2
+set arrow 3 from 1e+16,2.108914 to 1e+17,2.108914 nohead lc 3
+set arrow 4 from 1e+16,2.100159 to 1e+17,2.100159 nohead lc 4
+
+plot "Mrb1" u 5:3 lt -1 dt 1 lw 1.3 title "rho_c=5*10^{14}"  w l,\
+"Mrb2" u 5:3 lt -1 dt (15,15,15,15) lw 1.3 title "rho_c=10^{15}" w l,\
+"Mrb3" u 5:3 lt -1 dt ". . . " lw 1.5 title "rho_c=1.5*10^{15}" w l,\
+"Mrb4" u 5:3 lt -1 dt ".-.-" lw 1.3 title "rho_c=2*10^{15}" w l,\
+
+
+Rb_vs_rho_cr
+set arrow 1 from 1e+16,13.54 to 1e+17,13.54 nohead lc 1
+set arrow 2 from 1e+16,12.69 to 1e+17,12.69 nohead lc 2
+set arrow 3 from 1e+16,11.55 to 1e+17,11.55 nohead lc 3
+set arrow 4 from 1e+16,10.63 to 1e+17,10.63 nohead lc 4
+set arrow 5 from 1e+16,9.94 to 1e+17,9.94 nohead lc 5
+
+plot "Mrb1" u 5:2 lt -1 dt 1 lw 1.3 title "rho_c=5*10^{14}"  w l,\
+"Mrb2" u 5:2 lt -1 dt (15,15,15,15) lw 1.3 title "rho_c=10^{15}" w l,\
+"Mrb3" u 5:2 lt -1 dt ". . . " lw 1.5 title "rho_c=1.5*10^{15}" w l,\
+"Mrb4" u 5:2 lt -1 dt ".-.-" lw 1.3 title "rho_c=2*10^{15}" w l,\
+"Mrb5" u 5:2 lt -1 dt "..--..--..--" lw 1.3 title "rho_c=2.5*10^{15}" w l
+
+Mrest_rho_cr
+set arrow 1 from 1e+16,1.267779 to 1e+17,1.267779 nohead lc 1
+set arrow 2 from 1e+16,2.187955 to 1e+17,2.187955 nohead lc 2
+set arrow 3 from 1e+16,2.451050 to 1e+17,2.451050 nohead lc 3
+set arrow 4 from 1e+16,2.437155 to 1e+17,2.437155 nohead lc 4
+plot "Mrb1" u 5:4 lt -1 dt 1 lw 1.3 title "rho_c=5*10^{14}"  w l,\
+"Mrb2" u 5:4 lt -1 dt (15,15,15,15) lw 1.3 title "rho_c=10^{15}" w l,\
+"Mrb3" u 5:4 lt -1 dt ". . . " lw 1.5 title "rho_c=1.5*10^{15}" w l,\
+"Mrb4" u 5:4 lt -1 dt ".-.-" lw 1.3 title "rho_c=2*10^{15}" w l,\

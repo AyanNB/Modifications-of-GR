@@ -1,0 +1,24 @@
+
+set multiplot
+set object 1 rect from 10,0.6 to 12,1.6
+set object 1 rect fc rgb 'white' fillstyle solid 0.0 noborder
+set arrow 1 from 12.40624,0.3613771 to 12.37474,0.3567927 lc 8
+set arrow 2 from 13.13981,0.6445979 to 13.10231,0.6342316 lc 8
+set arrow 3 from 13.45935,0.9244900 to 13.42934,0.9082949 lc 8
+set arrow 4 from 13.04380,1.779103 to 13.11731,1.766315 lc 8
+set arrow 5 from 12.22172,2.035835 to 12.40024,2.056912 lc 8
+set arrow 6 from 11.06211,2.117197 to 11.38914,2.206831 lc 8
+set arrow 7 from 9.881488,2.024703 to 10.37354,2.205160 lc 8
+plot "Mrb.dat" u 2:3 w p pt 5 lc 8,\
+"Mrb1" u 2:3 w p pt 3 lc 1
+set origin 0.11,0.17
+set size 0.55,0.53
+set xrange [12.37:13.46]
+set yrange [0.355:0.94]
+set xtics 12.36,1.11,13.47
+set ytics 0.355,0.576,0.94
+unset key
+plot "Mrb.dat" u 2:3 w p pt 5 lc 8,\
+"Mrb1" u 2:3 w p pt 3 lc 1
+
+
