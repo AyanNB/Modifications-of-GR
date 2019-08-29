@@ -2,6 +2,7 @@
 Code on Fortran to the "Note on how modifications of GR at high densities affect astrophysical compact objects"
 
 Here the folders mean:
+
 poly_s - Polytropic equation of state with Semiclassical corrections 
 
 poly_t - Polytropic equation of state with Torsional corrections
